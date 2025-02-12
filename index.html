@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <div class="nav-tabs">
+                <button class="tab-btn active" data-tab="home">About</button>
+                <button class="tab-btn" data-tab="interests">Passions</button>
+                <button class="tab-btn" data-tab="future">Aspirations</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="tab-content active">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <!-- Replace with your image -->
+                    <img src="images/profile.jpg" alt="Jing Hui">
+                </div>
+                <div class="intro">
+                    <h1>Hello, I'm <span class="highlight">Jing Hui</span></h1>
+                    <p class="tagline">Your Tagline Here</p>
+                </div>
+            </div>
+
+            <div class="section academic-background">
+                <h2>Academic Background</h2>
+                <div class="card">
+                    <h3>Current Studies</h3>
+                    <p>Your Institution</p>
+                    <p>Your Major</p>
+                </div>
+            </div>
+
+            <div class="section mbti">
+                <h2>MBTI Profile</h2>
+                <div class="card">
+                    <h3>Your MBTI Type</h3>
+                    <p>Brief explanation of your personality type</p>
+                </div>
+            </div>
+
+            <div class="section experience">
+                <h2>Professional Experience</h2>
+                <div class="timeline">
+                    <!-- Timeline items will be added here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests" class="tab-content">
+            <div class="interests-grid">
+                <div class="interest-card" id="swimming">
+                    <h2>Swimming</h2>
+                    <div class="content">
+                        <div class="gallery">
+                            <!-- Add your swimming images here -->
+                            <img src="images/swimming1.jpg" alt="Swimming Competition">
+                            <img src="images/swimming2.jpg" alt="Training Session">
+                        </div>
+                        <div class="description">
+                            <h3>My Journey</h3>
+                            <p>Your swimming experience and achievements</p>
+                            <ul>
+                                <li>Competition achievements</li>
+                                <li>Training milestones</li>
+                                <li>Club involvement</li>
+                            </ul>
+                            <p>Additional details about your swimming journey...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interest-card" id="bouldering">
+                    <h2>Bouldering</h2>
+                    <div class="content">
+                        <div class="gallery">
+                            <!-- Add your bouldering images here -->
+                            <img src="images/bouldering1.jpg" alt="Climbing Session">
+                            <img src="images/bouldering2.jpg" alt="Work at Gym">
+                        </div>
+                        <div class="description">
+                            <h3>My Experience</h3>
+                            <p>Your bouldering journey and work experience</p>
+                            <ul>
+                                <li>Notable climbs</li>
+                                <li>Work experience at the gym</li>
+                                <li>Skills developed</li>
+                            </ul>
+                            <p>More details about your bouldering experience...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interest-card" id="crocheting">
+                    <h2>Crocheting</h2>
+                    <div class="content">
+                        <div class="gallery">
+                            <!-- Add your crochet project images here -->
+                            <img src="images/crochet1.jpg" alt="Project 1">
+                            <img src="images/crochet2.jpg" alt="Project 2">
+                        </div>
+                        <div class="description">
+                            <h3>My Projects</h3>
+                            <p>Your crochet projects and future plans</p>
+                            <ul>
+                                <li>Completed projects</li>
+                                <li>Current works</li>
+                                <li>Future project ideas</li>
+                            </ul>
+                            <p>More details about your crocheting journey...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section id="future" class="tab-content">
+            <div class="timeline-container">
+                <div class="timeline-section">
+                    <h2>Short-term Goals</h2>
+                    <div class="timeline-content">
+                        <!-- Add your short-term goals here -->
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h2>Medium-term Goals</h2>
+                    <div class="timeline-content">
+                        <!-- Add your medium-term goals here -->
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h2>Long-term Vision</h2>
+                    <div class="timeline-content">
+                        <!-- Add your long-term vision here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> email@example.com</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">About</a></li>
+                    <li><a href="#interests">Passions</a></li>
+                    <li><a href="#future">Aspirations</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Jing Hui. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html> 
