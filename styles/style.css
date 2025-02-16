@@ -493,4 +493,53 @@ h3 {
 
 .tab-btn {
     font-weight: 500;
+}
+
+/* Add these styles for the MBTI section */
+.mbti-card {
+    overflow: hidden;
+}
+
+.mbti-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.mbti-text {
+    padding-right: 1rem;
+}
+
+.mbti-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mbti-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.mbti-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .mbti-content {
+        grid-template-columns: 1fr;
+    }
+
+    .mbti-text {
+        padding-right: 0;
+    }
+
+    .mbti-image {
+        order: -1;
+        margin-bottom: 1rem;
+    }
 } 
