@@ -18,10 +18,15 @@
     <nav>
         <div class="nav-container">
             <div class="logo">Portfolio</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="nav-tabs">
-                <button class="tab-btn active" data-tab="home">About</button>
-                <button class="tab-btn" data-tab="interests">Passions</button>
-                <button class="tab-btn" data-tab="future">Aspirations</button>
+                <a href="index.html" class="tab-btn active">About</a>
+                <a href="passions.html" class="tab-btn">Passions</a>
+                <a href="aspirations.html" class="tab-btn">Aspirations</a>
             </div>
         </div>
     </nav>
@@ -42,10 +47,22 @@
 
             <div class="section academic-background">
                 <h2>Academic Background</h2>
-                <div class="card">
-                    <h3>Current Studies</h3>
-                    <p>Your Institution</p>
-                    <p>Your Major</p>
+                <div class="card academic-card">
+                    <div class="academic-content">
+                        <div class="academic-text">
+                            <p>I am pursuing Diploma in Applied AI & Analytics at Singapore Polytechnic, where I explore
+                                data
+                                analytics, machine learning, and their applications in decision-making. I
+                                enjoy
+                                working with data to uncover insights and improve efficiency, particularly through data
+                                visualisation. My studies have also given me hands-on experience with tools like Python
+                                and SQL,
+                                strengthening my analytical and problem-solving skills.</p>
+                        </div>
+                        <div class="academic-image">
+                            <img src="images/academic.jpg" alt="Academic Background">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -54,24 +71,17 @@
                 <div class="timeline">
                     <div class="experience-content">
                         <div class="experience-text">
-                            <p>During my internship, I was involved in data visualisation and data preparation using
-                                low-code
-                                software. I contributed to a project focused on streamlining data
-                                management processes for our client. Through this experience, I developed a deeper
-                                understanding of data analytics and its
-                                application in real-world scenarios. Additionally, I gained valuable insights into how
-                                data-driven decisions
-                                can impact organisational efficiency. This internship allowed me to enhance my technical
-                                skills and
-                                apply theoretical knowledge to practical projects.</p>
+                            <p>I've interend in Singapore Polytechnic Data Science and Analytic Centre (SP DSAC) for 44
+                                weeks. During my internship, I worked on data
+                                visualisation and preparation using low-code
+                                software, contributing to a project that streamlined data management for our client.
+                                This experience deepened my understanding of data analytics and its real-world impact on
+                                organisational efficiency while allowing me to apply theoretical knowledge to practical
+                                projects.</p>
                             <br>
-                            <p>The staff at the company were incredibly supportive, creating a family-like atmosphere
-                                that
-                                helped me feel welcomed and guided throughout the internship. Their mentorship allowed
-                                me to grow both
-                                professionally and personally, enhancing my technical skills while fostering strong,
-                                lasting
-                                professional relationships.</p>
+                            <p>The staff at the company were incredibly supportive. Their mentorship allowed me to grow
+                                both professionally and personally, enhancing my technical skills while fostering
+                                strong, lasting professional relationships.</p>
                         </div>
                         <div class="experience-image">
                             <img src="images/experience.jpg" alt="Professional Experience">
@@ -85,21 +95,15 @@
                 <div class="card mbti-card">
                     <div class="mbti-content">
                         <div class="mbti-text">
-                            <h3>INFP</h3>
+
                             <p>My MBTI is INFP. INFPs are deeply creative and idealistic, driven by their values and a
                                 desire to
-                                make a meaningful impact. They possess a strong sense of empathy, a deep understanding
-                                of
-                                others, and a constant drive for personal growth, which helps them connect with people
-                                and ideas
-                                in a unique and thoughtful way.</p>
+                                make a meaningful impact.</p>
                             <br>
 
-                            <p>I love exploring new ideas and finding creative ways to bring them to life. Whether it's
-                                through
-                                data, design, or solving problems, I enjoy working on things that feel meaningful. I
-                                like taking
-                                my time to understand things deeply and always look for ways to improve.</p>
+                            <p>My curiosity and analytical mindset as an INFP align with my passion for uncovering
+                                insights through data analytics. I enjoy finding meaningful patterns and understanding
+                                the reasons behind them.</p>
                             <br>
                             <p>I can be quite independent, but I also enjoy bouncing ideas off others and learning from
                                 different perspectives. I believe that even small details can make a big difference, and
@@ -107,102 +111,8 @@
                                 to create work that feels thoughtful and purposeful.</p>
                         </div>
                         <div class="mbti-image">
-                            <img src="images/infp.jpg" alt="INFP Personality">
+                            <img src="images/infp.jpg" alt="INFP as my MBTI">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interests Section -->
-        <section id="interests" class="tab-content">
-            <div class="interests-grid">
-                <div class="interest-card" id="swimming">
-                    <h2>Swimming</h2>
-                    <div class="content">
-                        <div class="gallery">
-                            <!-- Add your swimming images here -->
-                            <img src="images/swimming1.jpg" alt="Swimming Competition">
-                            <img src="images/swimming2.jpg" alt="Training Session">
-                        </div>
-                        <div class="description">
-                            <h3>My Journey</h3>
-                            <p>Your swimming experience and achievements</p>
-                            <ul>
-                                <li>Competition achievements</li>
-                                <li>Training milestones</li>
-                                <li>Club involvement</li>
-                            </ul>
-                            <p>Additional details about your swimming journey...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="interest-card" id="bouldering">
-                    <h2>Bouldering</h2>
-                    <div class="content">
-                        <div class="gallery">
-                            <!-- Add your bouldering images here -->
-                            <img src="images/bouldering1.jpg" alt="Climbing Session">
-                            <img src="images/bouldering2.jpg" alt="Work at Gym">
-                        </div>
-                        <div class="description">
-                            <h3>My Experience</h3>
-                            <p>Your bouldering journey and work experience</p>
-                            <ul>
-                                <li>Notable climbs</li>
-                                <li>Work experience at the gym</li>
-                                <li>Skills developed</li>
-                            </ul>
-                            <p>More details about your bouldering experience...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="interest-card" id="crocheting">
-                    <h2>Crocheting</h2>
-                    <div class="content">
-                        <div class="gallery">
-                            <!-- Add your crochet project images here -->
-                            <img src="images/crochet1.jpg" alt="Project 1">
-                            <img src="images/crochet2.jpg" alt="Project 2">
-                        </div>
-                        <div class="description">
-                            <h3>My Projects</h3>
-                            <p>Your crochet projects and future plans</p>
-                            <ul>
-                                <li>Completed projects</li>
-                                <li>Current works</li>
-                                <li>Future project ideas</li>
-                            </ul>
-                            <p>More details about your crocheting journey...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Future Section -->
-        <section id="future" class="tab-content">
-            <div class="timeline-container">
-                <div class="timeline-section">
-                    <h2>Short-term Goals</h2>
-                    <div class="timeline-content">
-                        <!-- Add your short-term goals here -->
-                    </div>
-                </div>
-
-                <div class="timeline-section">
-                    <h2>Medium-term Goals</h2>
-                    <div class="timeline-content">
-                        <!-- Add your medium-term goals here -->
-                    </div>
-                </div>
-
-                <div class="timeline-section">
-                    <h2>Long-term Vision</h2>
-                    <div class="timeline-content">
-                        <!-- Add your long-term vision here -->
                     </div>
                 </div>
             </div>
@@ -213,8 +123,8 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Contact</h3>
-                <p><i class="fas fa-envelope"></i> email@example.com</p>
-                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> tjinghui.1505@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +65 88435570</p>
             </div>
             <div class="footer-section">
                 <h3>Social Media</h3>
