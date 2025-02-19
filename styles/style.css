@@ -187,6 +187,9 @@ main {
 }
 
 .gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -571,7 +574,9 @@ h3 {
 }
 
 .mbti-image img {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
@@ -616,7 +621,9 @@ h3 {
 }
 
 .experience-image img {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
@@ -674,7 +681,9 @@ h3 {
 }
 
 .academic-image img {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
