@@ -576,10 +576,12 @@ h3 {
 .mbti-image img {
     width: 100%;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    background-color: var(--accent-color);
+    padding: 1rem;
 }
 
 .mbti-image img:hover {
@@ -623,10 +625,12 @@ h3 {
 .experience-image img {
     width: 100%;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    background-color: var(--accent-color);
+    padding: 1rem;
 }
 
 .experience-image img:hover {
@@ -674,6 +678,29 @@ h3 {
     padding-right: 1rem;
 }
 
+.academic-text ul {
+    padding-left: 2rem; 
+}
+
+.academic-text ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.academic-text ul li {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.academic-text ul li:before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    position: absolute;
+    left: -1.5rem;
+    font-size: 1.2em;
+}
+
 .academic-image {
     display: flex;
     justify-content: center;
@@ -683,10 +710,12 @@ h3 {
 .academic-image img {
     width: 100%;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    background-color: var(--accent-color);
+    padding: 1rem;
 }
 
 .academic-image img:hover {
@@ -825,4 +854,41 @@ h3 {
         width: auto;
         justify-content: flex-start;
     }
+}
+
+/* Add styles for image tooltips */
+.gallery img,
+.mbti-image img,
+.experience-image img,
+.academic-image img {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery img:hover::after,
+.mbti-image img:hover::after,
+.experience-image img:hover::after,
+.academic-image img:hover::after {
+    content: attr(alt);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background: var(--card-background);
+    color: var(--primary-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Add container styles to handle overflow */
+.gallery,
+.mbti-image,
+.experience-image,
+.academic-image {
+    position: relative;
+    padding-bottom: 30px; /* Space for tooltip */
 } 
